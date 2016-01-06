@@ -10,7 +10,7 @@ public class Item31
 
 }
 
-//Очень опасно
+//Очень опасно.
 enum Ensemble
 {
     SOLO,
@@ -24,7 +24,7 @@ enum Ensemble
 
 }
 
-//Норм
+//Нормально.
 enum EnsembleUpdate
 {
     SOLO(1),

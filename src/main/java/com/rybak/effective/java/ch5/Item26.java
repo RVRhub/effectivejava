@@ -70,7 +70,7 @@ class Stack<E>
         return result;
     }
 
-    //Метод puchAll без использования групповых символов - имеет недостатки !
+    //Метод puchAll без использования групповых символов имеет недостатки !
 //    public void puchAll(Iterable<E> src)
 //    {
 //        for(E e : src)

@@ -14,16 +14,16 @@ public class Item63
         private final int index;
 
         /**
-         * Конструируем IndexOutOfBoundsException
+         * Констатируем IndexOutOfBoundsException
          *
-         * @param lowerBound - самое меньшее из разрешеных значений индекса
-         * @param upperBound - самое большое из разрешеных значений индекса
+         * @param lowerBound - самое меньшее из разрешенных значений индекса
+         * @param upperBound - самое большое из разрешенных значений индекса
          * @param index - действительное значение индекса
          */
         public IndexOutOfBoundsException(int lowerBound, int upperBound, int index)
         {
             //Генерируем описание исключения,
-            //фиксирующее обстоятельсва отказа
+            //фиксирующее обстоятельства отказа
             super("Lower Bound: " + lowerBound +
                   ", Upper bound: " + upperBound +
                   ", Index: " + index);

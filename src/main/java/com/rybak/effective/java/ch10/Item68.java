@@ -6,7 +6,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * Предпрочитайте испльзовать экзекутеров и заданий вместо потоков
+ * Предпочитайте использовать экзекутеров и задания вместо потоков
  *
  * Ключевым понятием теперь является рабочая единица , которая называется задачей.
  * Два вида задачи : Runnable , Callable
@@ -24,7 +24,7 @@ public class Item68 {
 
         executorService.shutdown();
 
-        //Пишете небьльшую программу или легко нагружаный сервер
+        //Пишете небольшую программу или легко нагруженный сервер
         ExecutorService executorServicePool = Executors.newCachedThreadPool();
         ExecutorService executorServiceFixedPool = Executors.newFixedThreadPool(10);
 

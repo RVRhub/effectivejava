@@ -47,7 +47,7 @@ public class Item43
 
     /**
      *
-     * @return правильный способ возврат копии колеции
+     * @return правильный способ возврат копии коллекции
      */
     public List<Cheese> getCheesesList()
     {

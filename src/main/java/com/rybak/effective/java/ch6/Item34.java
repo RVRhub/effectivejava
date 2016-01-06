@@ -1,10 +1,10 @@
 package com.rybak.effective.java.ch6;
 
 /**
- * Имитируйте расширяемые перечислимые типы с помощью интерфейстов
+ * Имитируйте расширяемые перечислимые типы с помощью интерфейсов
  *
- * Хотя в не может написать расширяемый перечислимый тип, вы можете имитировать его
- * написав интерфейс с оновным перечислимым типом , который реализует интерфейс.
+ * Хотя вы не может написать расширяемый перечислимый тип, вы можете имитировать его
+ * написав интерфейс с основным перечислимым типом , который реализует интерфейс.
  */
 public class Item34
 {
@@ -15,7 +15,7 @@ public class Item34
         test(ExtendedOperation.class, x, y);
     }
 
-    //Гарантирует , что объект Class представляет перечислимый тип и подтип пренадлежащий к OperationInterface
+    //Гарантирует , что объект Class представляет перечислимый тип и подтип принадлежащий к OperationInterface
     private static <T extends Enum<T> & OperationInterface> void test(Class<T> opSet, double x, double y)
     {
         for (OperationInterface op : opSet.getEnumConstants())
@@ -29,7 +29,7 @@ interface OperationInterface
 {
     double apply(double x, double y);
 }
-//Имитируйте расширяемые перечислимые типы с помощью интерфейстов
+//Имитируйте расширяемые перечислимые типы с помощью интерфейсов
 enum BasicOperation implements OperationInterface
 {
     PLUS("+")

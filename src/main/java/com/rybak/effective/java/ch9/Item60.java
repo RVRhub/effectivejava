@@ -7,10 +7,10 @@ import java.util.ConcurrentModificationException;
  *
  * IllegalArgumentException - Неправильное значение параметров
  * IllegalStateException    - Состояние объекта неприемлемо для вызова методов
- * IndexOutOfBoundsException - Значения параметра , задающего индекс, выходит за приделы биапозона
+ * IndexOutOfBoundsException - Значения параметра , задающего индекс, выходит за приделы диапозона
  * NullPointerException     - Значение параметра равно  null
- * ConcurrentModificationException - Обнаружена паралельная модификация объекта из разных потоков
- * UnsupportedOperationException   - Объект не имеет подержки указаного метода
+ * ConcurrentModificationException - Обнаружена параллельная модификация объекта из разных потоков
+ * UnsupportedOperationException   - Объект не имеет поддержки указанного метода
  */
 public class Item60 {
 

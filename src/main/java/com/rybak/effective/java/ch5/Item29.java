@@ -30,16 +30,16 @@ public class Item29
 }
 
 
-//TODO класс Favorites безопасный с точки зрения типов
-//TODO неоднородный , все ключи являются ключами разных типов
-//TODO следовательно мы можем назвать Favorites безопасным неоднородным контейнером
+//TODO класс Favorites безопасный с точки зрения типов и
+//TODO неоднородный , так как все ключи являются ключами разных типов.
+//TODO Следовательно, мы можем назвать Favorites безопасным неоднородным контейнером.
 //Безопасный шаблон неоднородного контейнира - API
 class Favorites
 {
     private Map<Class<?>, Object> favorites = new HashMap<Class<?>, Object>();
 
-    //Безопасность типов обеспечивается динамичексой передачей
-    //TODO имеются также упаковщи колекций Collections.checkedSet()  Collections.checkedList()
+    //Безопасность типов обеспечивается динамической передачей
+    //TODO Также имеются упаковщики колекций Collections.checkedSet()  Collections.checkedList()
 
     public <T> void putFavorite(Class<T> type, T instance)
     {
@@ -53,7 +53,7 @@ class Favorites
 
     public <T> T getFavorite(Class<T> type)
     {
-        //cast проверяет , а является объект экземляром типа type
+        //cast проверяет , является ли объект экземпляром типа type
         return type.cast(favorites.get(type));
     }
 

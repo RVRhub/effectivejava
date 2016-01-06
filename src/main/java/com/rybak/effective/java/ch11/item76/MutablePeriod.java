@@ -16,9 +16,9 @@ public class MutablePeriod
     //Экземпляр интервала времени
     public final Period period;
 
-    //Поле начало периуда , к которому мы не должны иметь доступ
+    //Поле начало периода , к которому мы не должны иметь доступ
     public final Date start;
-    //Поле конца периуда , к которому мы не должны иметь доступ
+    //Поле конца периода , к которому мы не должны иметь доступ
     public final Date end;
 
     public MutablePeriod()
@@ -38,7 +38,7 @@ public class MutablePeriod
              */
             byte[] ref = { 0x71, 0, 0x7e, 0, 5 };  // сылка №5
             bos.write(ref); //поле start
-            ref[4] = 4;     //сылка №4
+            ref[4] = 4;     //ссылка №4
             bos.write(ref); //поле end
 
 

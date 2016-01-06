@@ -3,7 +3,7 @@ package com.rybak.effective.java.ch5;
 import java.util.*;
 
 /**
- * Подерживайте обобщенные методы
+ * Поддерживайте обобщенные методы
  */
 public class Item27
 {
@@ -23,7 +23,7 @@ public class Item27
 
 
 
-//использование обобщеного сингелтона
+//использование обобщенного сингелтона
         String [] strings = {"jute", "hemp", "nylon"};
         UnaryFunction<String> sameString = identityFunction();
         for (String s : strings)
@@ -40,10 +40,10 @@ public class Item27
 
     }
 
-    //Создание экзамляра типа с параметрами с помощью конструктора
+    //Создание экземляра типа с параметрами с помощью конструктора
     Map<String, List<String>> anagrams = new HashMap<String, List<String>>();
 
-    //TODO обобщеный метод статичексой генерацнии
+    //TODO обобщеный метод статической генерацнии
     public static <K, V> HashMap<K, V> newHashMap()
     {
         return new HashMap<K, V>();
@@ -56,7 +56,7 @@ public class Item27
         T apply(T arg);
     }
 
-    //шоблон обобщенного статического синглтона
+    //шаблон обобщенного статического синглтона
     private static UnaryFunction<Object> IDENTITY_FUNCTION =
             new UnaryFunction<Object>() {
                 @Override
@@ -72,7 +72,7 @@ public class Item27
     }
 
 
-    //Исползуйте рекурсивное ограничение типа для выражений взаимной сопоставимости
+    //Используйте рекурсивное ограничение типа для выражений взаимной сопоставимости
     //читается как , для каждого типа T, который может быть сопоставлен с самим собой
     //TODO Comparable<? super T> - всегда так !!! Item 28!
     public static <T extends Comparable<? super T>> T max(List<? extends T> list)

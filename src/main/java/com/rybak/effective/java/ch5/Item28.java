@@ -8,11 +8,11 @@ import java.util.*;
 public class Item28
 {
     //смотреть Stack - Item26
-//TODO не испльзуйте wildcard - тип  в качестве воозвращаемого типа
-//TODO если пользователь класса должен думать о наличии wildcard-типов, то значит что-то не так с API класса
+//TODO не используйте wildcard тип  в качестве возвращаемого типа.
+//TODO Если пользователь класса должен думать о наличии wildcard-типов, то значит что-то не так с API - классом
     public static void main(String[] args) {
 
-        //ограничиные типом групповых сиволов wildcard-mun  Item26 Stack puchALL / pop
+        //ограниченные типом групповых сиволов wildcard-mun  Item26 Stack puchALL / pop
         //TODO PECS значит производитель - extends
         //TODO             потребитель  - super
         //TODO producer - extends, consumer - super
@@ -45,7 +45,7 @@ public class Item28
 
 
 
-    //TODO Если параметер для типа появился только один раз в декларации метода, замените его групповм сиволом.
+    //TODO Если параметр для типа появился только один раз в декларации метода, замените его групповым символом.
     public static void swap(List<?> list, int i , int j )
     {
         swapHelper(list, i, j);

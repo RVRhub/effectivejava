@@ -11,7 +11,7 @@ public class Item59
     public static void main(String[] args) throws TheCheckException {
 
 
-        //вызов с обрабатоваемым исключением
+        //вызов с обрабатываемым исключением
         try
         {
             new Item59().action();
